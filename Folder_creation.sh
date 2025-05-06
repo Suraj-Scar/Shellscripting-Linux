@@ -6,7 +6,7 @@
 
 create_folder() {
         local path=$1
-        local folder_name=("${@:2}")
+        
 
 # Now to check if given path is present or not
 
@@ -14,6 +14,8 @@ if [ ! -d "$path" ]; then
         echo "Error while finding the path, please enter correct path"
         return
 fi
+
+local folder_name=("${@:2}")
 
 #Now we need to create folders in mentioned path
 
